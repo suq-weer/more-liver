@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coal": {
+      "conditions": {
+        "items": [
+          {
+            "count": 4,
+            "items": "minecraft:cobblestone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moreliver:coal_ex1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_coal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreliver:coal_ex1"
+    ]
+  }
+}

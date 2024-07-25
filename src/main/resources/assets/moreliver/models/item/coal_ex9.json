@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+	"layer0": "moreliver:item/coals/coal_ex9"
+  }
+}

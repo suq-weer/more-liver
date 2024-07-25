@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "minecraft:coal"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "aaa",
+    " b ",
+    " b "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moreliver:coal_pickaxe"
+  }
+}

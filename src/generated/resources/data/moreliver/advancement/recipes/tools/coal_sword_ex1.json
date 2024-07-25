@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coal_ex1": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreliver:coal_ex1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moreliver:coal_sword_ex1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_coal_ex1"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreliver:coal_sword_ex1"
+    ]
+  }
+}
