@@ -1,6 +1,6 @@
 package com.xiaosuoaa.moreliver.datagen;
 
-import com.xiaosuoaa.moreliver.items.CoalItems;
+import com.xiaosuoaa.moreliver.items.ItemRegisterBus;
 import net.minecraft.advancements.critereon.MinMaxBounds;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -30,17 +30,17 @@ public class ModRecipeProvider extends RecipeProvider {
         //coal
         var unCoal = "has_coal";
         var coal = Items.COAL;
-        shapedAxeRecipe(recipeOutput, CoalItems.COAL_AXE.get(), coal, stick, unCoal);
-        shapedPickaxeRecipe(recipeOutput, CoalItems.COAL_PICKAXE.get(), coal, stick, unCoal);
-        shapedSwordRecipe(recipeOutput, CoalItems.COAL_SWORD.get(), coal, stick, unCoal);
+        shapedAxeRecipe(recipeOutput, ItemRegisterBus.COAL_AXE.get(), coal, stick, unCoal);
+        shapedPickaxeRecipe(recipeOutput, ItemRegisterBus.COAL_PICKAXE.get(), coal, stick, unCoal);
+        shapedSwordRecipe(recipeOutput, ItemRegisterBus.COAL_SWORD.get(), coal, stick, unCoal);
 
         //coal_ex1
         var unEx1 = "has_coal_ex1";
-        var ex1 = CoalItems.COAL_EX1.get();
+        var ex1 = ItemRegisterBus.COAL_EX1.get();
         shapedZipRecipe(recipeOutput, ex1, coal, Items.COBBLESTONE, unCoal);
-        shapedAxeRecipe(recipeOutput, CoalItems.COAL_AXE_EX1.get(), ex1, stick, unEx1);
-        shapedPickaxeRecipe(recipeOutput, CoalItems.COAL_PICKAXE_EX1.get(), ex1, stick, unEx1);
-        shapedSwordRecipe(recipeOutput, CoalItems.COAL_SWORD_EX1.get(), ex1, stick, unEx1);
+        shapedAxeRecipe(recipeOutput, ItemRegisterBus.COAL_AXE_EX1.get(), ex1, stick, unEx1);
+        shapedPickaxeRecipe(recipeOutput, ItemRegisterBus.COAL_PICKAXE_EX1.get(), ex1, stick, unEx1);
+        shapedSwordRecipe(recipeOutput, ItemRegisterBus.COAL_SWORD_EX1.get(), ex1, stick, unEx1);
     }
 
     public static void shapedZipRecipe(RecipeOutput pRecipeOutput, Item out, Item a, Item b, String unlockedName) {

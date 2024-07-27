@@ -1,6 +1,7 @@
 package com.xiaosuoaa.moreliver;
 
-import com.xiaosuoaa.moreliver.items.CoalItems;
+import com.xiaosuoaa.moreliver.blocks.BlockRegisterBus;
+import com.xiaosuoaa.moreliver.items.ItemRegisterBus;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -17,9 +18,11 @@ public class MoreLiverClient {
 	@SubscribeEvent
 	private void buildContents(BuildCreativeModeTabContentsEvent event) {
 		if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-			CoalItems.registerCoalsToIG(event);
+			ItemRegisterBus.registerCoalsToIG(event);
 		} else if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			CoalItems.registerCoalToolsToIG(event);
+			ItemRegisterBus.registerCoalToolsToIG(event);
+		} else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			BlockRegisterBus.registerBlocksToIG(event);
 		}
 	}
 }

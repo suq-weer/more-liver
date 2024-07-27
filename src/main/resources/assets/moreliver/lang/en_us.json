@@ -26,5 +26,17 @@
   "item.moreliver.coal_sword_ex4": "Coal Sword Level 4",
   "item.moreliver.coal_pickaxe_ex5": "Coal Pickaxe Level 5",
   "item.moreliver.coal_axe_ex5": "Coal Axe Level 5",
-  "item.moreliver.coal_sword_ex5": "Coal Sword Level 5"
+  "item.moreliver.coal_sword_ex5": "Coal Sword Level 5",
+  "item.moreliver.titanium": "Titanium",
+  "block.moreliver.ilmenite": "Ilmenite",
+  "block.moreliver.deepslate_ilmenite": "Deepslate Ilmenite",
+  "item.moreliver.coal_ex1.tooltip": "This looks so familiar...",
+  "item.moreliver.coal_ex2.tooltip": "§eHeh? Lv.2?",
+  "item.moreliver.coal_ex3.tooltip": "I think you might like coal.",
+  "item.moreliver.coal_ex4.tooltip": "You will get a diamond! XD",
+  "item.moreliver.coal_ex5.tooltip": "Q: Is this the last coal?",
+  "item.moreliver.coal_ex6.tooltip": "A: No.",
+  "item.moreliver.coal_ex7.tooltip": "I'm glad you can craft me.",
+  "item.moreliver.coal_ex8.tooltip": "EIGHT!",
+  "item.moreliver.coal_ex9.tooltip": "Now you can stop...... But there's more coal to come."
 }

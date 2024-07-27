@@ -1,12 +1,7 @@
 package com.xiaosuoaa.moreliver.datagen;
 
 import com.xiaosuoaa.moreliver.MoreLiver;
-import com.xiaosuoaa.moreliver.items.CoalItems;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataProvider;
-import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.*;
-import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
