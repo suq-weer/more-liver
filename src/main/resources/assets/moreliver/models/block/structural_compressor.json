@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "moreliver:block/structural_compressor_side",
+    "up": "moreliver:block/structural_compressor_side",
+    "north": "moreliver:block/structural_compressor",
+    "east": "moreliver:block/structural_compressor_side",
+    "south": "moreliver:block/structural_compressor_side",
+    "west": "moreliver:block/structural_compressor_side",
+    "particle": "moreliver:block/structural_compressor_side"
+  },
+  "render_type": "solid"
+}

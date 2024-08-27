@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moreliver:block/ilmenite"
+    "all": "moreliver:block/ore/ilmenite"
   }
 }

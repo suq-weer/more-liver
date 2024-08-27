@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "moreliver:block/structural_compressor"
+    },
+    "facing=east": {
+      "model": "moreliver:block/structural_compressor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "moreliver:block/structural_compressor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "moreliver:block/structural_compressor",
+      "y": 270
+    }
+  }
+}

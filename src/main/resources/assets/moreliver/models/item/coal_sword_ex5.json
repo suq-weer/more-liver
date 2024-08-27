@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "minecraft:item/handheld",
   "textures": {
-	"layer0": "moreliver:item/coals/swords/coal_sword_ex5"
+	"layer0": "moreliver:item/material/coals/swords/coal_sword_ex5"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "minecraft:item/handheld",
   "textures": {
-	"layer0": "moreliver:item/coals/axes/coal_axe_ex4"
+	"layer0": "moreliver:item/material/coals/axes/coal_axe_ex4"
   }
 }

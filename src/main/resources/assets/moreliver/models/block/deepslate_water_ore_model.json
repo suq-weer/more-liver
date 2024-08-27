@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "moreliver:block/ore/deepslate_water_ore"
+  }
+}

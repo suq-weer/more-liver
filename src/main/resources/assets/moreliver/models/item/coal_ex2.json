@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-	"layer0": "moreliver:item/coals/coal_ex2"
+	"layer0": "moreliver:item/material/coals/coal_ex2"
   }
 }

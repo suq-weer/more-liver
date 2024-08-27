@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "minecraft:item/handheld",
   "textures": {
-	"layer0": "moreliver:item/coals/pickaxes/coal_pickaxe_ex1"
+	"layer0": "moreliver:item/material/coals/pickaxes/coal_pickaxe_ex1"
   }
 }

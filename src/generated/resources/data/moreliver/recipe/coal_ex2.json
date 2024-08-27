@@ -1,0 +1,16 @@
+{
+  "type": "moreliver:structural_compressor",
+  "key": {
+    "a": {
+      "item": "moreliver:coal_ex1"
+    }
+  },
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moreliver:coal_ex2"
+  }
+}
