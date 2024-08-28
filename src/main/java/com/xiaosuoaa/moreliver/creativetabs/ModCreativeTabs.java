@@ -61,6 +61,8 @@ public class ModCreativeTabs {
 					//水加工物
 					output.accept(NeoForgeItemRegisterBus.RAW_WATER.get());
 					output.accept(NeoForgeItemRegisterBus.WATER_INGOT.get());
+
+					MoreLiver.info("已构建模组全物品创造选项卡");
 				})
 				.build()
 		);

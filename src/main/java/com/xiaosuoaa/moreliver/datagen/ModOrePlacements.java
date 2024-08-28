@@ -1,4 +1,4 @@
-package com.xiaosuoaa.moreliver.world;
+package com.xiaosuoaa.moreliver.datagen;
 
 import com.xiaosuoaa.moreliver.MoreLiver;
 import net.minecraft.core.Holder;

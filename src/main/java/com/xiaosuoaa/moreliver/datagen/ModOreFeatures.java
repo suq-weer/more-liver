@@ -1,4 +1,4 @@
-package com.xiaosuoaa.moreliver.world;
+package com.xiaosuoaa.moreliver.datagen;
 
 import com.xiaosuoaa.moreliver.MoreLiver;
 import com.xiaosuoaa.moreliver.blocks.NeoForgeBlockRegisterBus;
@@ -36,7 +36,7 @@ public class ModOreFeatures {
         );
 
         FeatureUtils.register(pContext, ORE_ILMENITE, Feature.ORE, new OreConfiguration(ilmeniteList, 5));
-        FeatureUtils.register(pContext, ORE_WATER, Feature.ORE, new OreConfiguration(ilmeniteList, 10));
+        FeatureUtils.register(pContext, ORE_WATER, Feature.ORE, new OreConfiguration(waterOreList, 10));
 
     }
 

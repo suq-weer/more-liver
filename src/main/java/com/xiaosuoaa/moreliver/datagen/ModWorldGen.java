@@ -1,9 +1,6 @@
 package com.xiaosuoaa.moreliver.datagen;
 
 import com.xiaosuoaa.moreliver.MoreLiver;
-import com.xiaosuoaa.moreliver.world.ModBiomeModifiers;
-import com.xiaosuoaa.moreliver.world.ModOreFeatures;
-import com.xiaosuoaa.moreliver.world.ModOrePlacements;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;

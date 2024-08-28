@@ -5,6 +5,6 @@ import net.minecraft.world.level.block.Blocks;
 
 public class IlmeniteBlock extends Block {
 	public IlmeniteBlock() {
-		super(Properties.ofFullCopy(Blocks.STONE).strength(3f));
+		super(Properties.ofFullCopy(Blocks.IRON_ORE));
 	}
 }

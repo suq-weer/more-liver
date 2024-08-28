@@ -13,6 +13,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends RecipeProvider {
+	public static RecipeOutput recipeOutput;
+
 	public ModRecipeProvider(PackOutput pPackOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
 		super(pPackOutput, lookupProvider);
 	}
@@ -26,6 +28,7 @@ public class ModRecipeProvider extends RecipeProvider {
 				.define('a', NeoForgeItemRegisterBus.COAL_EX1.get())
 				.unlockedBy("has_coal_ex2", has(MinMaxBounds.Ints.exactly(4), NeoForgeItemRegisterBus.COAL_EX1.get()))
 				.save(pRecipeOutput);
+		recipeOutput = pRecipeOutput;
 	}
 
 	private void buildCoalsRecipes(RecipeOutput recipeOutput) {

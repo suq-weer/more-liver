@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "moreliver:ilmenite"
+          "Name": "moreliver:water_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "moreliver:deepslate_ilmenite"
+          "Name": "moreliver:deepslate_water_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

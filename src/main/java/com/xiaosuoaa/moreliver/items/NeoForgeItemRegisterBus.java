@@ -27,6 +27,7 @@ public class NeoForgeItemRegisterBus {
 
 	// 工具定义
 	private static Item.Properties pickaxe(Float damage, Float speed) {
+		MoreLiver.info("定义煤炭工具……");
 		return new Item.Properties().attributes(
 				PickaxeItem.createAttributes(
 						CoalToolsTier.COAL_TIER,
@@ -160,6 +161,7 @@ public class NeoForgeItemRegisterBus {
 		event.accept(TITANIUM.get());
 		event.accept(RAW_WATER.get());
 		event.accept(WATER_INGOT.get());
+		MoreLiver.info("物品已添加到原版原材料选项卡");
 	}
 	public static void registerCoalToolsToIGToolsAndUtilities(BuildCreativeModeTabContentsEvent event) {
 		event.accept(COAL_SWORD.get());
@@ -180,5 +182,6 @@ public class NeoForgeItemRegisterBus {
 		event.accept(COAL_SWORD_EX5.get());
 		event.accept(COAL_PICKAXE_EX5.get());
 		event.accept(COAL_AXE_EX5.get());
+		MoreLiver.info("物品已添加到原版工具与实用物品选项卡");
 	}
 }

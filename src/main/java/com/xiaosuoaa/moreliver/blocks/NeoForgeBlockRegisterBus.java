@@ -59,8 +59,10 @@ public class NeoForgeBlockRegisterBus {
 		event.accept(DEEPSLATE_ILMENITE_ITEM.get());
 		event.accept(WATER_ORE_ITEM.get());
 		event.accept(DEEPSLATE_WATER_ORE_ITEM.get());
+		MoreLiver.info("方块已添加到原版自然方块选项卡");
 	}
 	public static void registerBlocksToIGFunctionalBlocks(BuildCreativeModeTabContentsEvent event) {
 		event.accept(STRUCTURAL_COMPRESSOR_ITEM.get());
+		MoreLiver.info("方块已添加到原版功能方块选项卡");
 	}
 }
