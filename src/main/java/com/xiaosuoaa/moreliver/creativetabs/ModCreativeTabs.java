@@ -54,6 +54,9 @@ public class ModCreativeTabs {
 					output.accept(NeoForgeItemRegisterBus.COAL_PICKAXE_EX5.get());
 					output.accept(NeoForgeItemRegisterBus.COAL_AXE_EX5.get());
 					output.accept(NeoForgeItemRegisterBus.COAL_SWORD_EX5.get());
+					output.accept(NeoForgeBlockRegisterBus.IRON_COAL_BLOCK_ITEM.get());
+					output.accept(NeoForgeBlockRegisterBus.IRON_COAL_BLOCK_ANODE_ITEM.get());
+					output.accept(NeoForgeBlockRegisterBus.IRON_COAL_BLOCK_CATHODE_ITEM.get());
 					//钛
 					output.accept(NeoForgeItemRegisterBus.TITANIUM.get());
 					output.accept(NeoForgeBlockRegisterBus.ILMENITE_ITEM.get());

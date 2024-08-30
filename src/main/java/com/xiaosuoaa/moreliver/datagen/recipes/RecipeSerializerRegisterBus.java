@@ -1,6 +1,8 @@
 package com.xiaosuoaa.moreliver.datagen.recipes;
 
 import com.xiaosuoaa.moreliver.MoreLiver;
+import com.xiaosuoaa.moreliver.datagen.recipes.compressor.StructuralCompressorRecipe;
+import com.xiaosuoaa.moreliver.datagen.recipes.compressor.StructuralCompressorRecipeSerializer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.neoforged.bus.api.IEventBus;

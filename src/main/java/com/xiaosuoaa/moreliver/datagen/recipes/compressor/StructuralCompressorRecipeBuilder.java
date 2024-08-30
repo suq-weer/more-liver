@@ -1,4 +1,4 @@
-package com.xiaosuoaa.moreliver.datagen.recipes;
+package com.xiaosuoaa.moreliver.datagen.recipes.compressor;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -10,7 +10,6 @@ import net.minecraft.advancements.critereon.RecipeUnlockedTrigger;
 import net.minecraft.data.recipes.RecipeBuilder;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -27,9 +26,6 @@ public class StructuralCompressorRecipeBuilder implements RecipeBuilder {
 	private final ItemStack result;
 	private final List<String> rows = Lists.newArrayList();
 	private final Map<String, Criterion<?>> criteria = new LinkedHashMap<>();
-	@javax.annotation.Nullable
-    private String group;
-	private boolean showNotification = true;
 	private final Map<Character, Ingredient> key = Maps.newLinkedHashMap();
 
 	public StructuralCompressorRecipeBuilder(ItemStack result) {
@@ -49,11 +45,6 @@ public class StructuralCompressorRecipeBuilder implements RecipeBuilder {
         }
     }
 
-	public StructuralCompressorRecipeBuilder showNotification(boolean pShowNotification) {
-        this.showNotification = pShowNotification;
-        return this;
-    }
-
 	@Override
 	public @NotNull RecipeBuilder unlockedBy(@NotNull String pName, @NotNull Criterion<?> pCriterion) {
 		this.criteria.put(pName, pCriterion);
@@ -62,15 +53,10 @@ public class StructuralCompressorRecipeBuilder implements RecipeBuilder {
 
 	@Override
 	public @NotNull RecipeBuilder group(@Nullable String pGroupName) {
-		this.group = pGroupName;
-        return this;
+		return this;
 	}
 
-    public StructuralCompressorRecipeBuilder define(Character pSymbol, TagKey<Item> pTag) {
-        return this.define(pSymbol, Ingredient.of(pTag));
-    }
-
-    public StructuralCompressorRecipeBuilder define(Character pSymbol, ItemLike pItem) {
+	public StructuralCompressorRecipeBuilder define(Character pSymbol, ItemLike pItem) {
         return this.define(pSymbol, Ingredient.of(pItem));
     }
 

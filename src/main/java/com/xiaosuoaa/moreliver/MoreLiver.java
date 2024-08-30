@@ -3,15 +3,12 @@ package com.xiaosuoaa.moreliver;
 import com.mojang.logging.LogUtils;
 import com.xiaosuoaa.moreliver.blocks.NeoForgeBlockRegisterBus;
 import com.xiaosuoaa.moreliver.creativetabs.ModCreativeTabs;
-import com.xiaosuoaa.moreliver.datagen.ModLootTableProvider;
-import com.xiaosuoaa.moreliver.datagen.ModRecipeProvider;
-import com.xiaosuoaa.moreliver.datagen.ModWorldGen;
 import com.xiaosuoaa.moreliver.datagen.recipes.RecipeSerializerRegisterBus;
 import com.xiaosuoaa.moreliver.datagen.recipes.RecipeTypeRegisterBus;
+import com.xiaosuoaa.moreliver.events.OnGatherDataEvent;
 import com.xiaosuoaa.moreliver.events.OnPlayerTickEvent;
 import com.xiaosuoaa.moreliver.items.NeoForgeItemRegisterBus;
 import com.xiaosuoaa.moreliver.ui.NeoForgeMenuRegisterBus;
-import net.minecraft.data.DataProvider;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
@@ -62,21 +59,8 @@ public class MoreLiver
 	private void onPlayerTick(PlayerTickEvent.Post event) {
 		OnPlayerTickEvent.hook(event);
 	}
-
 	private void gatherData(GatherDataEvent event){
-        var lp = event.getLookupProvider();
-        event.getGenerator().addProvider(
-                event.includeServer(),
-                (DataProvider.Factory<ModRecipeProvider>) pOutput -> new ModRecipeProvider(pOutput,lp)
-        );
-		event.getGenerator().addProvider(
-            event.includeServer(),
-				(DataProvider.Factory<ModLootTableProvider>) output -> new ModLootTableProvider(
-						event.getGenerator().getPackOutput(),
-						event.getLookupProvider()
-				)
-		);
-        event.getGenerator().addProvider(event.includeServer(), (DataProvider.Factory<ModWorldGen>) pOutput -> new ModWorldGen(pOutput,lp));
+		OnGatherDataEvent.hook(event);
     }
 }
 

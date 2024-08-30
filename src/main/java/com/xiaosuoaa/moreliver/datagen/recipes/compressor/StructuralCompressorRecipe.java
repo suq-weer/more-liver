@@ -1,5 +1,7 @@
-package com.xiaosuoaa.moreliver.datagen.recipes;
+package com.xiaosuoaa.moreliver.datagen.recipes.compressor;
 
+import com.xiaosuoaa.moreliver.datagen.recipes.RecipeSerializerRegisterBus;
+import com.xiaosuoaa.moreliver.datagen.recipes.RecipeTypeRegisterBus;
 import com.xiaosuoaa.moreliver.items.NeoForgeItemRegisterBus;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;

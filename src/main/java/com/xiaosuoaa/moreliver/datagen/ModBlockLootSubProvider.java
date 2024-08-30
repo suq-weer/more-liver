@@ -38,6 +38,9 @@ public class ModBlockLootSubProvider extends BlockLootSubProvider {
 		add(NeoForgeBlockRegisterBus.DEEPSLATE_WATER_ORE.get(), createSingleItemTable(NeoForgeItemRegisterBus.RAW_WATER.get()));
 
 		dropSelf(NeoForgeBlockRegisterBus.STRUCTURAL_COMPRESSOR.get());
+		dropSelf(NeoForgeBlockRegisterBus.IRON_COAL_BLOCK.get());
+		dropSelf(NeoForgeBlockRegisterBus.IRON_COAL_BLOCK_CATHODE.get());
+		dropSelf(NeoForgeBlockRegisterBus.IRON_COAL_BLOCK_ANODE.get());
     }
 
 	//同时掉两种，分为寻常和不寻常

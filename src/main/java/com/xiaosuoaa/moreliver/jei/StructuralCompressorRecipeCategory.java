@@ -2,7 +2,7 @@ package com.xiaosuoaa.moreliver.jei;
 
 import com.xiaosuoaa.moreliver.MoreLiver;
 import com.xiaosuoaa.moreliver.blocks.NeoForgeBlockRegisterBus;
-import com.xiaosuoaa.moreliver.datagen.recipes.StructuralCompressorRecipe;
+import com.xiaosuoaa.moreliver.datagen.recipes.compressor.StructuralCompressorRecipe;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;

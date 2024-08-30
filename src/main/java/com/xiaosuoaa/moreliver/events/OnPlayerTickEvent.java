@@ -1,7 +1,7 @@
 package com.xiaosuoaa.moreliver.events;
 
 import com.xiaosuoaa.moreliver.datagen.recipes.RecipeTypeRegisterBus;
-import com.xiaosuoaa.moreliver.datagen.recipes.StructuralCompressorRecipe;
+import com.xiaosuoaa.moreliver.datagen.recipes.compressor.StructuralCompressorRecipe;
 import com.xiaosuoaa.moreliver.ui.menu.StructuralCompressorMenu;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.entity.player.Player;

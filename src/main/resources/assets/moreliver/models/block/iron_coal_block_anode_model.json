@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "moreliver:block/ingot_block/iron_coal_block_anode"
+  }
+}

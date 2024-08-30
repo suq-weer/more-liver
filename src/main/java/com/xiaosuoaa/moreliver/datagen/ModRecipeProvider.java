@@ -1,6 +1,6 @@
 package com.xiaosuoaa.moreliver.datagen;
 
-import com.xiaosuoaa.moreliver.datagen.recipes.StructuralCompressorRecipeBuilder;
+import com.xiaosuoaa.moreliver.datagen.recipes.compressor.StructuralCompressorRecipeBuilder;
 import com.xiaosuoaa.moreliver.items.NeoForgeItemRegisterBus;
 import net.minecraft.advancements.critereon.MinMaxBounds;
 import net.minecraft.core.HolderLookup;
@@ -22,12 +22,6 @@ public class ModRecipeProvider extends RecipeProvider {
 	@Override
 	protected void buildRecipes(@NotNull RecipeOutput pRecipeOutput) {
 		buildCoalsRecipes(pRecipeOutput);
-		new StructuralCompressorRecipeBuilder(NeoForgeItemRegisterBus.COAL_EX2.get(), 1)
-				.pattern("aa")
-				.pattern("aa")
-				.define('a', NeoForgeItemRegisterBus.COAL_EX1.get())
-				.unlockedBy("has_coal_ex2", has(MinMaxBounds.Ints.exactly(4), NeoForgeItemRegisterBus.COAL_EX1.get()))
-				.save(pRecipeOutput);
 		recipeOutput = pRecipeOutput;
 	}
 
@@ -48,6 +42,20 @@ public class ModRecipeProvider extends RecipeProvider {
 		shapedAxeRecipe(recipeOutput, NeoForgeItemRegisterBus.COAL_AXE_EX1.get(), ex1, stick, unEx1);
 		shapedPickaxeRecipe(recipeOutput, NeoForgeItemRegisterBus.COAL_PICKAXE_EX1.get(), ex1, stick, unEx1);
 		shapedSwordRecipe(recipeOutput, NeoForgeItemRegisterBus.COAL_SWORD_EX1.get(), ex1, stick, unEx1);
+
+		//coal_ex2
+		var unEx2 = "has_coal_ex2";
+		var ex2 = NeoForgeItemRegisterBus.COAL_EX2.get();
+		structuralCompressorRecipeSingleItem(recipeOutput, ex1, ex2, unEx2);
+	}
+
+	private static void structuralCompressorRecipeSingleItem(@NotNull RecipeOutput pRecipeOutput, Item input, Item output, String unlockedName) {
+		new StructuralCompressorRecipeBuilder(output, 1)
+				.pattern("aa")
+				.pattern("aa")
+				.define('a', input)
+				.unlockedBy(unlockedName, has(MinMaxBounds.Ints.exactly(4), output))
+				.save(pRecipeOutput);
 	}
 
 	public static void shapedZipRecipe(RecipeOutput pRecipeOutput, Item out, Item a, Item b, String unlockedName) {
