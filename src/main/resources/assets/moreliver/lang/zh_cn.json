@@ -56,5 +56,6 @@
   "block.moreliver.iron_coal_block_anode.tooltip": "铁能导电就能带电喽",
   "block.moreliver.iron_coal_block_anode": "带正电的塑钢块",
   "block.moreliver.iron_coal_block_cathode.tooltip": "带负电？！",
-  "block.moreliver.iron_coal_block_cathode": "带负电的塑钢块"
+  "block.moreliver.iron_coal_block_cathode": "带负电的塑钢块",
+  "emi.category.moreliver.structural_compressor": "结构压缩机"
 }

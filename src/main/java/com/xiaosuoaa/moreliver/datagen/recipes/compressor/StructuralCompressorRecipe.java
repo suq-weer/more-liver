@@ -1,10 +1,12 @@
 package com.xiaosuoaa.moreliver.datagen.recipes.compressor;
 
+import com.xiaosuoaa.moreliver.MoreLiver;
 import com.xiaosuoaa.moreliver.datagen.recipes.RecipeSerializerRegisterBus;
 import com.xiaosuoaa.moreliver.datagen.recipes.RecipeTypeRegisterBus;
 import com.xiaosuoaa.moreliver.items.NeoForgeItemRegisterBus;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
@@ -69,5 +71,9 @@ public class StructuralCompressorRecipe implements Recipe<CraftingInput> {
 		List<ItemStack> re = new ArrayList<>();
 		re.add(NeoForgeItemRegisterBus.WATER_INGOT.get().getDefaultInstance());
 		return re;
+	}
+
+	public ResourceLocation getId() {
+		return ResourceLocation.fromNamespaceAndPath(MoreLiver.MODID, "structural_compressor");
 	}
 }
