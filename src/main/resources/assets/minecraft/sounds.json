@@ -1,0 +1,13 @@
+{
+  "music.menu": {
+	"replace": true,
+	"sounds": [
+	  {
+		"name": "moreliver:music.ml.menu",
+		"volume": 0.6,
+		"stream": true,
+		"type": "event"
+	  }
+	]
+  }
+}

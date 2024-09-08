@@ -1,0 +1,76 @@
+{
+  "music.ml.menu": {
+	"sounds": [
+	  "moreliver:more_liver_menu_1",
+	  "moreliver:more_liver_menu_2"
+	]
+  },
+  "music.boss_1": {
+	"sounds": [
+	  {
+		"name": "moreliver:boss_1",
+		"volume": 0.6,
+		"stream": true,
+		"type": "file"
+	  }
+	]
+  },
+  "music.boss_2": {
+	"sounds": [
+	  {
+		"name": "moreliver:boss_2",
+		"volume": 0.6,
+		"stream": true,
+		"type": "file"
+	  }
+	]
+  },
+  "music.boss_3": {
+	"sounds": [
+	  {
+		"name": "moreliver:boss_3_1",
+		"volume": 0.6,
+		"stream": true,
+		"type": "file"
+	  },
+	  {
+		"name": "moreliver:boss_3_2",
+		"volume": 0.6,
+		"stream": true,
+		"type": "file"
+	  }
+	]
+  },
+  "music.to_the_film": {
+	"sounds": [
+	  {
+		"name": "moreliver:to_the_film_1",
+		"volume": 0.6,
+		"stream": true,
+		"type": "file"
+	  },
+	  {
+		"name": "moreliver:to_the_film_2",
+		"volume": 0.6,
+		"stream": true,
+		"type": "file"
+	  }
+	]
+  },
+  "music.between_start_and_end": {
+	"sounds": [
+	  {
+		"name": "moreliver:between_start_and_end_1",
+		"volume": 0.6,
+		"stream": true,
+		"type": "file"
+	  },
+	  {
+		"name": "moreliver:between_start_and_end_2",
+		"volume": 0.6,
+		"stream": true,
+		"type": "file"
+	  }
+	]
+  }
+}
