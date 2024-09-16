@@ -1,6 +1,9 @@
 name: Build
 
-on: [push, pull_request]
+on:
+  push:
+    tags:
+      "v*"
 
 jobs:
   build:
@@ -22,3 +25,10 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
         with:
           arguments: build
+
+      - name: Create Release and Upload Release Asset
+        uses: softprops/action-gh-release@v1
+        with:
+          files:  build/libs/moreliver-*.jar
+          draft: true
+          fail_on_unmatched_files: true
