@@ -1,9 +1,6 @@
 name: Build
 
-on:
-  push:
-    tags:
-      "v*"
+on: [ pull_request, push ]
 
 jobs:
   build:
@@ -26,9 +23,9 @@ jobs:
         with:
           arguments: build
 
-      - name: Create Release and Upload Release Asset
-        uses: softprops/action-gh-release@v1
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
         with:
-          files:  build/libs/moreliver-*.jar
-          draft: true
-          fail_on_unmatched_files: true
+          name: Artifacts
+          path: |
+            neoforge/build/libs/
