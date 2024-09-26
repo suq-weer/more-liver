@@ -28,4 +28,4 @@ jobs:
         with:
           name: Artifacts
           path: |
-            neoforge/build/libs/
+            build/libs/
